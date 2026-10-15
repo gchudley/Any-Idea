@@ -2,14 +2,13 @@ import requests
 import pandas as pd
 
 url = "https://data.cityofnewyork.us/resource/5zyy-y8am.json"
-headers = {"X-App-Token": "YOUR_APP_TOKEN"}  # optional but recommended
 page_size = 50000
 offset = 0
 rows = []
 
 while True:
     params = {
-        "$where": "report_year=2024",   # confirm field name/type first
+        "$where": "report_year=2024"
         "$order": ":id",
         "$limit": page_size,
         "$offset": offset,
