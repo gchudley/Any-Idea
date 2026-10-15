@@ -1,0 +1,26 @@
+import requests
+import pandas as pd
+
+url = "https://data.cityofnewyork.us/resource/5zyy-y8am.json"
+headers = {"X-App-Token": "YOUR_APP_TOKEN"}  # optional but recommended
+page_size = 50000
+offset = 0
+rows = []
+
+while True:
+    params = {
+        "$where": "report_year=2024",   # confirm field name/type first
+        "$order": ":id",
+        "$limit": page_size,
+        "$offset": offset,
+    }
+    r = requests.get(url, params=params, headers=headers)
+    r.raise_for_status()
+    batch = r.json()
+    if not batch:
+        break
+    rows.extend(batch)
+    offset += page_size
+
+df = pd.DataFrame(rows)
+print(len(df))
