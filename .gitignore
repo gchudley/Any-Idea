@@ -1,3 +1,4 @@
 .ipynb_checkpoints/
 .venv/
 .env
+data/*.csv\n.ipynb_checkpoints/\n.venv/\n.env\n
