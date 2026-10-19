@@ -1,0 +1,23 @@
+# This is my local project dependencies matching the data1030 environment.
+# If there are any differnece, feel free rto update as this is just a reminder for us to include a yml file.
+# Versions pin direct dependencies; Conda resolves their transitive dependencies.
+# No machine-specific prefix or platform-specific build strings are included.
+name: data1030
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.14.6
+  - numpy=2.4.6
+  - pandas=3.0.3
+  - requests=2.34.2
+  - matplotlib=3.11.0
+  - seaborn=0.13.2
+  - scipy=1.18.1
+  - scikit-learn=1.9.0
+  - jupyterlab=4.6.3
+  - notebook=7.6.2
+  - ipykernel=7.3.0
+  - openpyxl=3.1.5
