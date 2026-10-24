@@ -5,7 +5,7 @@
 
 # Overview
 
-TBD
+This project aims to use the NYC's 2024 building energy disclosure data for LL84 to develop machine learning models which predict property-level Site EUI (energy use intensity).
 
 # Original Data Source and Official Data Documentation
 
