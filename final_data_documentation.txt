@@ -1,0 +1,449 @@
+Data Documentation for nyc_2024_data_selected.csv
+
+This csv file has 62 data columns including the property_id, which is used as an identifier.
+
+Data Field Description (in the csv file order)
+----------------------------------------------------------------------------------------------------
+
+property_id: Unique ENERGY STAR Portfolio Manager property identifier for the reported property.
+
+    Type: Identifier
+    Unit: None
+    Example: 7365
+
+
+primary_property_type_self: Primary property use selected by the reporting user, rather than calculated by Portfolio Manager.
+
+    Type: Categorical
+    Unit: None
+    Example: ["Office", "Financial Office", "Hospital (General Medical & Surgical)", "Retail Store", "Laboratory"]
+
+
+national_median_reference: Property category used to select the national-median comparison benchmark.
+
+    Type: Categorical
+    Unit: None
+    Example: ["CBECS - Office & Bank/Financial", "ASHE Survey", "CBECS - Retail Store", "CBECS - Laboratory", "CBECS - Other"]
+
+
+list_of_all_property_use: A text list of the property's use types and their corresponding gross floor areas, in ft².
+
+    Type: Text
+    Unit: None
+    Example: ["Office (668602.0), Financial Office (11116.0), Food Service (9494.0), Bank Branch (0.0), Retail
+        Store (4840.0)", "Restaurant (3262.0), Office (337187.0), Financial Office (16383.0), Bank Branch
+        (3023.0), Retail Store (23310.0)", "Other - Entertainment/Public Assembly (32668.0), Restaurant
+        (18515.0), Office (149601.0), Financial Office (368732.0)", "Restaurant (34269.0), Office (348996.0),
+        Retail Store (6021.0)", "Office (1020704.0), Financial Office (480712.0), Food Service (18924.0),
+        Retail Store (61047.0)"]
+
+
+largest_use_gfa_sqft: Gross floor area of the property's largest use type, in ft².
+
+    Type: Continuous
+    Unit: Square feet (ft2)
+    Example: [668602.0, 337187.0, 368732.0, 348996.0, 1020704.0]
+
+
+_2nd_largest_property_use: The property type with the second largest gross footage area for the property.
+
+    Type: Categorical
+    Unit: None
+    Example: ["Financial Office", "Retail Store", "Office", "Restaurant", "Laboratory"]
+
+
+second_use_gfa_sqft: Gross floor area of the second-largest property use, in square feet, renamed from _2nd_largest_property_use_1.
+
+    Type: Continuous
+    Unit: Square feet (ft2)
+    Example: [11116.0, 23310.0, 149601.0, 34269.0, 480712.0]
+
+
+_3rd_largest_property_use: The property type with the third largest gross footage area for the property.
+
+    Type: Categorical
+    Unit: None
+    Example: ["Food Service", "Financial Office", "Other - Entertainment/Public Assembly", "Retail Store",
+        "College/University"]
+
+
+third_use_gfa_sqft: Gross floor area of the third-largest property use, in square feet; renamed from _3rd_largest_property_use_1.
+
+    Type: Continuous
+    Unit: Square feet (ft2)
+    Example: [9494.0, 16383.0, 32668.0, 6021.0, 61047.0]
+
+
+year_built: Construction year, or major gut-renovation year when entered that way by the reporter.
+
+    Type: Integer (year)
+    Unit: Year (YYYY)
+    Example: [1982, 1956, 1989, 1961, 1999]
+
+
+number_of_buildings: Total buildings belonging to the reported property.
+
+    Type: Numeric (count)
+    Unit: buildings
+    Example: [1, 5, 2, 4, 0]
+
+
+occupancy: Percentage of the property that is occupied and operational.
+
+    Type: Continuous
+    Unit: Percent (0-100 scale, not 0-1)
+    Example: [55, 90, 95, 100, 60]
+
+
+metered_areas_water: The parts of the property covered by the water meters used for reporting.
+
+    Type: Categorical
+    Unit: None
+    Example: ["Whole Property", "Tenant and/or common areas (partial energy or water loads)", "Another
+        configuration", "Common areas (all energy or water loads)", "Tenant areas (all energy or water
+        loads)"]
+
+
+site_eui_kbtu_ft: Annual site energy use per square foot of corresponding gross floor area, in kBtu/ft2.
+
+    Type: Continuous
+    Unit: kBtu/ft2/year
+    Example: [54.9, 87.6, 59.5, 82.4, 79.7]
+
+
+medical_office_gross_floor: Gross floor area assigned to medical office use within the property, in ft².
+
+    Type: Continuous
+    Unit: Square feet (ft2)
+    Example: [5241.0, 5184.0, 107393.0, 42312.0, 11996.0]
+
+
+medical_office_number_of: Reported number of computers associated with the medical office use.
+
+    Type: Numeric (count)
+    Unit: computers
+    Example: [10.48, 13.0, 350.0, 122.0, 35.0]
+
+
+medical_office_number_of_1: Reported number of MRI machines associated with the medical office use.
+
+    Type: Numeric (count)
+    Unit: MRI machines
+    Example: [0.0, 4.0, 1.0, 3.0, 2.0]
+
+
+medical_office_number_of_2: Number of workers present during the medical office's main shift, excluding patients and other visitors.
+
+    Type: Numeric (count)
+    Unit: workers on the main shift
+    Example: [11.53, 13.0, 340.0, 107.0, 30.0]
+
+
+medical_office_percent_that: Percentage of the medical office floor area that can be mechanically cooled.
+
+    Type: Continuous
+    Unit: Percent (0-100 scale, not 0-1)
+    Example: [100.0, 90.0, 68.0, 67.95, 30.0]
+
+
+medical_office_percent_that_1: Percentage of the medical office floor area that can be heated.
+
+    Type: Continuous
+    Unit: Percent (0-100 scale, not 0-1)
+    Example: [100.0, 90.0, 82.0, 67.95, 30.0]
+
+
+medical_office_weekly: Typical number of hours per week that the medical office operates.
+
+    Type: Continuous
+    Unit: Hours per week
+    Example: [65.0, 43.0, 80.0, 55.0, 60.0]
+
+
+k_12_school_gross_floor_area: Gross floor area assigned to K-12 school use within the property, in ft².
+
+    Type: Continuous
+    Unit: Square feet (ft2)
+    Example: [171725.0, 124900.0, 175325.0, 111600.0, 188575.0]
+
+
+multifamily_housing_government: Whether the multifamily housing use receives government affordable-housing subsidies for some or all units.
+
+    Type: Categorical
+    Unit: None
+    Example: ["No", "100% Yes"]
+
+
+multifamily_housing_gross: Total floor area used for multifamily housing, measured in ft².
+
+    Type: Continuous
+    Unit: Square feet (ft2)
+    Example: [595530.5, 305355.0, 375698.0, 853879.0, 409506.0]
+
+
+multifamily_housing_number: Total bedroom count across the residential units.
+
+    Type: Numeric (count)
+    Unit: bedrooms
+    Example: [836.24, 264.0, 600.0, 1700.0, 579.0]
+
+
+multifamily_housing_number_1: Bedroom density per 1,000 ft² of multifamily housing area.
+
+    Type: Continuous
+    Unit: bedrooms per 1,000 ft2 of multifamily housing area
+    Example: [1.4042, 0.86457, 1.59703, 1.99091, 1.4139]
+
+
+multifamily_housing_number_2: Count of laundry equipment hookups inside individual residential units.
+
+    Type: Numeric (count)
+    Unit: in-unit laundry hookups
+    Example: [105.0, 20.0, 0.0, 251.0, 226.0]
+
+
+multifamily_housing_number_3: Count of laundry equipment hookups in shared areas.
+
+    Type: Numeric (count)
+    Unit: common-area laundry hookups
+    Example: [0.0, 36.0, 79.0, 64.0, 5.0]
+
+
+multifamily_housing_number_4: Count of residential units in buildings with at least 10 stories.
+
+    Type: Numeric (count)
+    Unit: residential units in buildings with at least 10 stories
+    Example: [0.0, 105.0, 340.0, 921.0, 481.0]
+
+
+multifamily_housing_percent: Percentage of multifamily housing floor area that mechanical equipment can cool.
+
+    Type: Continuous
+    Unit: Percent (0-100 scale, not 0-1)
+    Example: [100.0, 90.0, 80.0, 20.0, 0.0]
+
+
+multifamily_housing_percent_1: Percentage of multifamily housing floor area that mechanical equipment can heat.
+
+    Type: Continuous
+    Unit: Percent (0-100 scale, not 0-1)
+    Example: [100.0, 90.0, 80.0, 88.23, 70.0]
+
+
+multifamily_housing_total: Total residential unit count, including occupied and vacant units.
+
+    Type: Numeric (count)
+    Unit: residential units
+    Example: [716.78, 105.0, 340.0, 921.0, 481.0]
+
+
+multifamily_housing_total_1: Residential unit density per 1,000 ft² of multifamily housing area.
+
+    Type: Continuous
+    Unit: residential units per 1,000 ft2 of multifamily housing area
+    Example: [1.20359, 0.34386, 0.90498, 1.07861, 1.17459]
+
+
+multifamily_housing_number_5: High-rise residential unit density per 1,000 ft² of multifamily housing area.
+
+    Type: Continuous
+    Unit: high-rise residential units per 1,000 ft2 of multifamily housing area
+    Example: [0.0, 0.34386, 0.90498, 1.07861, 1.17459]
+
+
+multifamily_housing_number_6: Count of residential units in buildings with 5–9 stories.
+
+    Type: Numeric (count)
+    Unit: residential units in buildings with 5-9 stories
+    Example: [0.0, 15.0, 25.0, 13.0, 45.0]
+
+
+multifamily_housing_number_7: Mid-rise residential unit density per 1,000 ft² of multifamily housing area.
+
+    Type: Continuous
+    Unit: mid-rise residential units per 1,000 ft2 of multifamily housing area
+    Example: [0.0, 0.29101, 0.1909, 0.24649, 0.32459]
+
+
+multifamily_housing_resident: Resident population category served by the housing, such as students or seniors.
+
+    Type: Categorical
+    Unit: None
+    Example: ["No specific resident population", "Dedicated Senior/Independent Living", "Dedicated Student",
+        "Other dedicated housing", "Dedicated Special Accessibility Needs"]
+
+
+office_gross_floor_area_ft: Total floor area used for offices, measured in ft².
+
+    Type: Continuous
+    Unit: Square feet (ft2)
+    Example: [668602.0, 337187.0, 149601.0, 348996.0, 1020704.0]
+
+
+office_number_of_computers: Reported office computer count; current EPA guidance uses regularly occupied workstations.
+
+    Type: Numeric (count)
+    Unit: reported computers / regularly occupied workstations
+    Example: [3883.2, 1670.0, 299.2, 1810.0, 3008.0]
+
+
+office_number_of_workers: Number of workers present during the main office shift. Number of Workers should not include visitors to the buildings such as clients, customers, or patients.
+
+    Type: Numeric (count)
+    Unit: workers on the main shift
+    Example: [2268.78, 332.0, 344.08, 422.0, 893.0]
+
+
+office_percent_that_can_be: Percentage of office floor area that can be mechanically cooled.
+
+    Type: Continuous
+    Unit: Percent (0-100 scale, not 0-1)
+    Example: [100.0, 99.05, 99.58, 42.83, 95.13]
+
+
+office_percent_that_can_be_1: Percentage of office floor area that can be heated by mechanical equipment.
+
+    Type: Continuous
+    Unit: Percent (0-100 scale, not 0-1)
+    Example: [100.0, 99.73, 61.7, 0.0, 93.6]
+
+
+office_weekly_operating_hours: Typical weekly hours when most office workers are present. Excludes time occupied only by maintenance, security, cleaning, or other support personnel, and excludes HVAC startup or shutdown time.
+
+    Type: Continuous
+    Unit: Hours per week
+    Example: [65.0, 76.0, 98.0, 39.18, 66.18]
+
+
+office_worker_density_number: Office workers per 1,000 square feet of office floor area.
+
+    Type: Continuous
+    Unit: main-shift workers per 1,000 ft2 of office area
+    Example: [3.39333, 0.98462, 2.3, 1.20918, 0.87489]
+
+
+parking_open_parking_lot: Area of illuminated open parking lots, including relevant lanes and driveways, in square feet.
+
+    Type: Continuous
+    Unit: Square feet (ft2)
+    Example: [0.0, 79196.0, 91262.0, 5246.0, 198170.0]
+
+
+parking_completely_enclosed: Floor area of completely enclosed parking garages, in square feet.
+
+    Type: Continuous
+    Unit: Square feet (ft2)
+    Example: [211980.0, 0.0, 84718.0, 141378.0, 68700.0]
+
+
+parking_partially_enclosed: Floor area of covered parking garages with partially or fully open sides, in square feet.
+
+    Type: Continuous
+    Unit: Square feet (ft2)
+    Example: [0.0, 39590.0, 182360.0, 40310.0, 199497.0]
+
+
+restaurant_gross_floor_area: Floor area of the restaurant property use, in square feet.
+
+    Type: Continuous
+    Unit: Square feet (ft2)
+    Example: [3262.0, 18515.0, 34269.0, 6449.0, 10390.0]
+
+
+restaurant_weekly_operating: Typical weekly hours the restaurant is open to the public.
+
+    Type: Continuous
+    Unit: Hours per week
+    Example: [65.0, 60.0, 104.0, 80.0, 76.39]
+
+
+restaurant_worker_density: Restaurant workers per 1,000 square feet of restaurant floor area.
+
+    Type: Continuous
+    Unit: workers per 1,000 ft2 of restaurant area
+    Example: [2.2011, 2.19984, 2.2, 2.20034, 0.14164]
+
+
+retail_store_gross_floor: Floor area of the retail-store property use, in square feet.
+
+    Type: Continuous
+    Unit: Square feet (ft2)
+    Example: [4840.0, 23310.0, 6021.0, 61047.0, 12885.0]
+
+
+retail_store_number_of_walk: Total number of walk-in refrigeration/freezer units at the retail property use.
+
+    Type: Numeric (count)
+    Unit: walk-in refrigeration/freezer units
+    Example: [0.0, 2.0, 8.0, 5.0, 4.0]
+
+
+retail_store_number_of_open: Count of open or closed refrigerated/freezer display cases and cabinets; excludes vending machines and compact refrigerators.
+
+    Type: Numeric (count)
+    Unit: refrigerated/freezer display cases and cabinets
+    Example: [0.0, 5.0, 51.0, 73.0, 6.0]
+
+
+property_gfa_self_reported: User-entered property gross floor area, in square feet, not time-weighted.
+
+    Type: Continuous
+    Unit: Square feet (ft2)
+    Example: [694052.0, 383165.0, 569516.0, 389286.0, 1581387.0]
+
+
+electric_distribution_utility: The electric distribution facility used.
+
+    Type: Categorical
+    Unit: None
+    Example: ["Consolidated Edison Co-NY Inc", "Long Island Power Authority", "Baltimore Gas & Electric Co",
+        "Public Service Elec & Gas Co", "Virginia Electric & Power Co"]
+
+
+number_of_active_energy_meters: Total energy meters active during any part of the reporting year.
+
+    Type: Numeric (count)
+    Unit: energy meters
+    Example: [5, 7, 19, 13, 3]
+
+
+number_of_active_energy_meters_2: Active energy meters tracked but excluded from the property's energy- metric calculations.
+
+    Type: Numeric (count)
+    Unit: energy meters excluded from energy-metric calculations
+    Example: [0, 1, 4, 2, 3]
+
+
+number_of_active_it_meters: Active meters tracking energy consumption by information technology equipment.
+
+    Type: Numeric (count)
+    Unit: IT energy meters
+    Example: [0, 3, 1, 2, 6]
+
+
+aggregate_meter_s_electric_number_of_individual_meters_included: Number of active individual electric meters entered as components of aggregate electric meters during the metric year. This is not the total number of all electric meters at the property.
+
+    Type: Numeric (count)
+    Unit: individual electric meters included in aggregate meters
+    Example: [0, 15, 1]
+
+
+borough: The borough where the property is located.
+
+    Type: Categorical
+    Unit: None
+    Example: ["MANHATTAN", "STATEN IS", "BRONX", "QUEENS", "BROOKLYN"]
+
+
+latitude: The property's north-south geographic coordinate, in decimal degrees.
+
+    Type: Continuous
+    Unit: Decimal degrees north
+    Example: [40.756631, 40.750698, 40.75831, 40.753074, 40.756181]
+
+
+longitude: The property's east-west geographic coordinate, in decimal degrees; negative values indicate west longitude.
+
+    Type: Continuous
+    Unit: Decimal degrees east; west longitudes are negative
+    Example: [-73.982826, -73.974306, -73.982504, -73.972753, -73.986244]
